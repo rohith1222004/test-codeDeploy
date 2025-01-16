@@ -12,7 +12,7 @@ phases:
       - echo "Building the JAR files..."
       - mvn clean package
       - echo "Renaming appspec-renamed.yml to appspec.yml"
-      - mv ../../appspec-renamed.yml ../../appspec.yml
+      - mv appspec-renamed.yml appspec.yml
   post_build:
     commands:
       - echo "Build completed successfully."
@@ -20,7 +20,7 @@ phases:
 artifacts:
   files:
     - target/my-java-project-1.0-SNAPSHOT.jar
-    - ../../appspec.yml
+    - appspec.yml
   base-directory: target
   discard-paths: yes
   name: build_$(date +%Y-%m-%d)/JavaApp
