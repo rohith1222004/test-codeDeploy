@@ -16,7 +16,8 @@ phases:
   post_build:
     commands:
       - echo "Build completed successfully."
-
+      - ls target/
+      - pwd
 artifacts:
   files:
     - target/my-java-project-1.0-SNAPSHOT.jar
