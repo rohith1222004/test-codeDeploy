@@ -16,10 +16,23 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>3.1.0</version>
                 <executions>
+                    <!-- Default JAR Execution -->
                     <execution>
+                        <id>default-jar</id>
                         <goals>
                             <goal>jar</goal>
                         </goals>
+                    </execution>
+                    <!-- Supplemental JAR Execution -->
+                    <execution>
+                        <id>supplemental-jar</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <classifier>supplemental</classifier>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
