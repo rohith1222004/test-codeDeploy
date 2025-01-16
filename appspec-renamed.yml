@@ -1,0 +1,9 @@
+version: 0.0
+os: linux
+files:
+  - source: target/my-java-project-1.0-SNAPSHOT.jar
+    destination: /opt/my-java-project/
+hooks:
+  AfterInstall:
+    - location: scripts/install.sh
+      timeout: 180
