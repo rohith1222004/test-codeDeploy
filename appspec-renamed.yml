@@ -5,5 +5,5 @@ files:
     destination: /home/ec2-user/my-java-project
 hooks:
   AfterInstall:
-    - location: scripts/install.sh
+    - location: install.sh
       timeout: 180
