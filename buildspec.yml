@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Running batch builds..."
+
+batch:
+  fast-fail: false
+  build-list:
+    - identifier: Machine_1
+      buildspec: buildspec-machine1.yml
+    - identifier: Machine_2
+      buildspec: buildspec-machine2.yml
