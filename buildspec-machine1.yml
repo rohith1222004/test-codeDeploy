@@ -18,6 +18,7 @@ phases:
       - echo "Build completed successfully."
       - ls target/
       - pwd
+      - ls
 artifacts:
   files:
     - target/my-java-project-1.0-SNAPSHOT.jar
