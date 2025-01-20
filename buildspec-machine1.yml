@@ -22,6 +22,6 @@ artifacts:
   files:
     - target/my-java-project-1.0-SNAPSHOT.jar
     - appspec.yml
-    - scripts/install.sh
+    - install.sh
   discard-paths: yes
   name: build_$(date +%Y-%m-%d)/JavaApp
